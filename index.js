@@ -218,7 +218,7 @@ async function save(auto=false){
 }
 
 saveBtn.addEventListener('click',()=>save(false));
-setInterval(()=>save(true),1000);
+setInterval(()=>save(true),15000);
 </script>
 </body>
 </html>`,{ headers:{ "Content-Type":"text/html;charset=UTF-8" } });
