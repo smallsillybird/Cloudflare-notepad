@@ -204,7 +204,7 @@ async function save(auto=false){
         updateTimeDisplays();
       } else {
         if(!auto) status.textContent='已保存: '+new Date().toLocaleString(undefined,{hour12:false});
-        setTimeout(()=>status.textContent='', 3000);
+        setTimeout(()=>status.textContent='', 15000);
         if(data.updated_at){
           document.querySelector('.updated').dataset.time = data.updated_at;
         }
